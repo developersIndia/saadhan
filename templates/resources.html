@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <p class="title is-5">{{category_name}}</p>
+
+    {% for res in resources %}
+    <div class="card">
+        <div class="card-content">
+            <div class="content">
+                <p class="title is-4">{{res.title}}</p>
+            </div>
+
+            <footer class="card-footer">
+                <a href="#" class="card-footer-item">Copy link</a>
+                <a href="#" class="card-footer-item">Tweet</a>
+            </footer>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}

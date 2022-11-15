@@ -31,7 +31,6 @@ class Resource:
         Given a URL, return response data in JSON and the response code
         """
         url = f"{Resource.API}{CATEGORY_API_PATH[param.get('category')]}"
-        print(url)
         req = urllib.request.Request(url, headers=HEADERS)
 
         with urllib.request.urlopen(req) as response:

@@ -19,12 +19,11 @@ CATEGORIES = {
 
 @app.route("/", methods=["GET"])
 def home():
-    return render_template("base.html", categories=CATEGORIES)
+    return render_template("categories.html", categories=CATEGORIES)
 
 
 @app.route("/resources", methods=["GET"])
 def category():
     params = request.args
-    resources = resourcer.Resource.get_resource(params)
-
-    return resources
+    resources, hcode = resourcer.Resource.get_resource(params)
+    return render_template("resources.html", resources=resources['resources'])
