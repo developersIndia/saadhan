@@ -1,17 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DevelopersIndia Resources</title>
-  </head>
-  <h1>What do you wanna learn today?</h1>
-  <body>
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"
-    ></script>
-    <script src="https://unpkg.com/htmx.org@1.7.0"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saadhan by r/developersIndia</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1 class="content is-large">What do you wanna learn today ?</h1>
+  </div>
+
+  {% for category, link in categories.items() %}
+  <a class="button is-medium" href="/resources?category={{ link }}">{{category}}</a>
+  {% endfor %}
+
+  <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+  <script src="https://unpkg.com/htmx.org@1.7.0"></script>
+</body>
+
 </html>
