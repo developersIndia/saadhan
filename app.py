@@ -25,5 +25,5 @@ def home():
 @app.route("/resources", methods=["GET"])
 def category():
     params = request.args
-    resources, hcode = resourcer.Resource.get_resource(params)
+    resources = resourcer.Resource.get_resource(params)
     return render_template("resources.html", resources=resources['resources'])

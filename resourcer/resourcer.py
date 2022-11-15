@@ -1,6 +1,5 @@
-import urllib
-import json
-
+import requests
+import requests_cache
 
 HEADERS = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/77.0.3865.90 Safari/537.36",
@@ -21,18 +20,15 @@ CATEGORY_API_PATH = {
     "computer-science": "computer-science",
 }
 
+requests_cache.install_cache("resource_cache", backend="memory", expire_after=180)
 
 class Resource:
     API: str = "https://developersIndia.github.io/resources/"
 
     def get_resource(param) -> str:
-        # https://developersindia.github.io/resources/languages/javascript/
         """
         Given a URL, return response data in JSON and the response code
         """
         url = f"{Resource.API}{CATEGORY_API_PATH[param.get('category')]}"
-        req = urllib.request.Request(url, headers=HEADERS)
-
-        with urllib.request.urlopen(req) as response:
-            res = json.loads(response.read().decode("utf-8"))
-        return res, response.code
+        res = requests.get(url).json()
+        return res
