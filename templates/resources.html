@@ -3,22 +3,82 @@
 {% block content %}
 
 <div class="container">
-    <p class="title is-5">{{category_name}}</p>
+    <p class="title is-5">{{category}}</p>
 
-    {% for res in resources %}
-    <div class="card">
-        <div class="card-content">
-            <div class="content">
-                <p class="title is-4">{{res.title}}</p>
+    <div class="columns">
+        <div class="column">
+            <p class="subtitle is-4">Filter by level</p>
+            <div class="control">
+                <div class="select">
+                    <select>
+                        <option hx-post="/filtered_resources"
+                            hx-vals='{"level": "beginner", "category":"{{category}}" }' hx-target="#resources">beginner
+                        </option>
+                        <option hx-post="/filtered_resources"
+                            hx-vals='{"level": "intermediate", "category":"{{category}}"}' hx-target="#resources">
+                            intermediate</option>
+                        <option hx-post="/filtered_resources" hx-vals='{"level": "advanced", "category":"{{category}}"}'
+                            hx-target="#resources">advanced</option>
+                        <option hx-post="/filtered_resources" hx-vals='{"level": "everyone", "category":"{{category}}"}'
+                            hx-target="#resources">everyone</option>
+                    </select>
+                </div>
             </div>
-            <span class="tag is-danger">{{res.level}}</span>
-            <footer class="card-footer">
-                <a href="#" class="card-footer-item">Copy Link</a>
-                <a target="_blank" href="http://twitter.com/share?text=Hey, checkout this resource {{res.title}} via saadhan.devsindia.in&url={{res.url}}&hashtags=devsindia" class="card-footer-item">Tweet</a>
-            </footer>
+        </div>
+
+        <div class="column">
+            <p class="subtitle is-4">Filter by type</p>
+            <div class="control">
+                <div class="select">
+                    <select>
+                        <option hx-post="/filtered_resources" hx-vals='{"type": "video", "category":"{{category}}"}'
+                            hx-target="#resources">
+                            video</option>
+                        <option hx-post="/filtered_resources" hx-vals='{"type": "article", "category":"{{category}}"}'
+                            hx-target="#resources">
+                            article</option>
+                        <option hx-post="/filtered_resources" hx-vals='{"type": "book", "category":"{{category}}"}'
+                            hx-target="#resources">book
+                        </option>
+                        <option hx-post="/filtered_resources" hx-vals='{"type": "github", "category":"{{category}}"}'
+                            hx-target="#resources">
+                            github</option>
+                        <option hx-post="/filtered_resources" hx-vals='{"type": "course", "category":"{{category}}"}'
+                            hx-target="#resources">
+                            course</option>
+                        <option hx-post="/filtered_resources" hx-vals='{"type": "audio", "category":"{{category}}"}'
+                            hx-target="#resources">
+                            audio</option>
+                        <option hx-post="/filtered_resources"
+                            hx-vals='{"type": "cheatsheet", "category":"{{category}}"}' hx-target="#resources">
+                            cheatsheet</option>
+                        <option hx-post="/filtered_resources" hx-vals='{"type": "website", "category":"{{category}}"}'
+                            hx-target="#resources">
+                            website</option>
+                    </select>
+                </div>
+            </div>
         </div>
     </div>
-    {% endfor %}
+
+    <div id="resources">
+        {% for res in resources %}
+        <div class="card">
+            <div class="card-content">
+                <div class="content">
+                    <p class="title is-4">{{res.title}}</p>
+                </div>
+                <span class="tag is-danger">{{res.level}}</span>
+                <footer class="card-footer">
+                    <a href="#" class="card-footer-item">Copy Link</a>
+                    <a target="_blank"
+                        href="http://twitter.com/share?text=Hey, checkout this resource {{res.title}} via saadhan.devsindia.in&url={{res.url}}&hashtags=devsindia"
+                        class="card-footer-item">Tweet</a>
+                </footer>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
 </div>
 
 {% endblock content %}

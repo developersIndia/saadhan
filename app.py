@@ -24,6 +24,27 @@ def home():
 
 @app.route("/resources", methods=["GET"])
 def category():
-    params = request.args
-    resources = resourcer.Resource.get_resource(params)
-    return render_template("resources.html", resources=resources['resources'])
+    category = request.args.get("category")
+    rsr = resourcer.Resource(category)
+    resources = rsr.get_resource()
+    return render_template(
+        "resources.html", resources=resources["resources"], category=category
+    )
+
+
+@app.route("/filtered_resources", methods=["POST"])
+def filtered_resources():
+    res_type = request.form.get("type")
+    res_level = request.form.get("level")
+
+    rsr = resourcer.Resource(request.form.get("category"))
+
+    if res_level is not None:
+        resources = rsr.get_resources_by_level(res_level)
+        return render_template("filtered_resources.html", resources=resources)
+
+    elif res_type is not None:
+        resources = rsr.get_resources_by_type(res_type)
+        return render_template("filtered_resources.html", resources=resources)
+
+    return "Wuba luba dub dub"
