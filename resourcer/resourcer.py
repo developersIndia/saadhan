@@ -25,6 +25,9 @@ HEADERS = {
 CATEGORY_API_PATH = {
     "python": "languages/python",
     "javascript": "languages/javascript",
+    "c":"languages/c",
+    "c++":"languages/c++",
+    "css":"languages/css",
     "git": "tools/git",
     "android": "app-development/android",
     "flutter": "app-development/flutter",

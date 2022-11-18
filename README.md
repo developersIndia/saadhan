@@ -2,12 +2,38 @@
 
 Saadhan is a resource hub for the [r/devlopersIndia](https://reddit.com/r/developersIndia) community
 
-![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
-[![open-source-love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges)
+[![Discord](https://img.shields.io/discord/669880381649977354?color=%237289da&label=Discord&logo=Discord)](https://discordapp.com/invite/MKXMSNC)
+[![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/developersIndia?style=social)](https://www.reddit.com/r/developersIndia/)
 
-## TODO
-- Fix navbar burger
-- Add a filter for resource type & level.
+
+## ❓ What is this
+- Saadhan is an app to aggregate and provide tech resources to learn from.
+- Resources are contributed by community. [Contribute your favourite resources](https://github.com/developersIndia/resources)
+- The website is built using Flask as backend and [HTMX](https://htmx.org/) with [Bulma](https://bulma.io) as frontend.
+
+## 🧰 Installation
+
+1. Clone the repo
+
+   ```bash
+   git clone https://github.com/developersIndia/saadhan.git
+   ```
+2. Initialise a virtual environment.
+
+   ```bash
+   cd saadhan
+   python3 -m venv venv
+   source venv/bin/activate
+   ```
+3. Install dependencies
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+4. Run development server.
+   ```bash
+   make run
+   ```
 
 # 📜 License
 

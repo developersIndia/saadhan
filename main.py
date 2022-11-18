@@ -6,6 +6,9 @@ app = Flask(__name__)
 CATEGORIES = {
     "Python": "python",
     "JavaScript": "javascript",
+    "C++": "c++",
+    "C":"c",
+    "CSS":"css",
     "Data Structures & Algorithms": "dsa",
     "Machine Learning": "machine-learning",
     "Deep Learning": "deep-learning",

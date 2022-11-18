@@ -34,8 +34,13 @@
         <a href="/" class="navbar-item">
           Home
         </a>
-  
-        <a href="https://github.com/developersIndia/saadhan" class="navbar-item">
+        <a href="/" class="navbar-item">
+          About
+        </a>
+        <a href="/contributors" class="navbar-item">
+          Contributors
+        </a>
+        <a href="https://github.com/developersIndia/saadhan/issues/new/choose" class="navbar-item">
           Report an issue 🐞
         </a>
       </div>
@@ -69,7 +74,7 @@
       <p>
         <strong>Saadhan</strong> by <a href="https://reddit.com/r/developersIndia">r/developersIndia</a>. The source
         code is licensed
-        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content
+        <a href="https://github.com/developersIndia/saadhan/blob/main/LICENSE">GPL v3.0</a>. The website content
         is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
       </p>
     </div>
@@ -77,12 +82,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.4/randomColor.min.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
   <script src="https://unpkg.com/htmx.org@1.8.4"></script>
-  <script type="text/javascript">
-    var categories = document.getElementsByClassName("category_name");
-    for (var category = 0; category < categories.length; category++) {
-      categories[category].style.backgroundColor = randomColor({ luminosity: 'light' });
-    }
-  </script>
+  <script src={{ url_for('static', filename='js/custom.js') }}></script>
 </body>
 
 </html>
