@@ -11,6 +11,14 @@
     a {
       color: #E4376D;
     }
+    .grid-container {
+      display: grid;
+      grid-gap: 1rem;
+    }
+    .grid-container.grid-repeat-5 {
+      grid-template-columns: repeat(5, 1fr);
+    }
+  
   </style>
   <script src="https://unpkg.com/htmx.org@1.8.4"></script>
 </head>

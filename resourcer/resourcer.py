@@ -73,3 +73,8 @@ class Resource:
             if r.get("level") == level:
                 filtered_res.append(r)
         return filtered_res
+    
+    # @classmethod
+    def get_all_contributors():
+        res = requests.get("https://raw.githubusercontent.com/developersIndia/resources/master/.all-contributorsrc").json()
+        return res

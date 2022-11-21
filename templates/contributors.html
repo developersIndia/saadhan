@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<p class="subtitle is-3 is-vcentered has-text-centered">Thanks to all these wonderful people ❤️</p>
+<div class="container grid-container grid-repeat-5">
+    {% for contributor in contributors %}
+    <div class="grid-item">
+        <a href="{{contributor.profile}}">
+            <img src="{{contributor.avatar_url}}" alt="">
+            <p class="subtitle is-4">{{contributor.name}}</p>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
+{% endblock content %}

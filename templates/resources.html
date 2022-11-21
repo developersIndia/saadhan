@@ -10,18 +10,15 @@
             <p class="subtitle is-4">Filter by level</p>
             <div class="control">
                 <div class="select">
-                    <select>
-                        <option hx-post="/filtered_resources"
-                            hx-vals='{"level": "beginner", "category":"{{category}}" }' hx-target="#resources">beginner
-                        </option>
-                        <option hx-post="/filtered_resources"
-                            hx-vals='{"level": "intermediate", "category":"{{category}}"}' hx-target="#resources">
-                            intermediate</option>
-                        <option hx-post="/filtered_resources" hx-vals='{"level": "advanced", "category":"{{category}}"}'
-                            hx-target="#resources">advanced</option>
-                        <option hx-post="/filtered_resources" hx-vals='{"level": "everyone", "category":"{{category}}"}'
-                            hx-target="#resources">everyone</option>
-                    </select>
+                    <form action="">
+                        <select name="level" hx-vals='{"category":"{{category}}"}' hx-post="/filtered_resources"
+                            hx-target="#resources">
+                            <option value="beginner">beginner</option>
+                            <option value="intermediate">intermediate</option>
+                            <option value="advanced">advanced</option>
+                            <option value="everyone">everyone</option>
+                        </select>
+                    </form>
                 </div>
             </div>
         </div>
@@ -30,31 +27,15 @@
             <p class="subtitle is-4">Filter by type</p>
             <div class="control">
                 <div class="select">
-                    <select>
-                        <option hx-post="/filtered_resources" hx-vals='{"type": "video", "category":"{{category}}"}'
-                            hx-target="#resources">
-                            video</option>
-                        <option hx-post="/filtered_resources" hx-vals='{"type": "article", "category":"{{category}}"}'
-                            hx-target="#resources">
-                            article</option>
-                        <option hx-post="/filtered_resources" hx-vals='{"type": "book", "category":"{{category}}"}'
-                            hx-target="#resources">book
-                        </option>
-                        <option hx-post="/filtered_resources" hx-vals='{"type": "github", "category":"{{category}}"}'
-                            hx-target="#resources">
-                            github</option>
-                        <option hx-post="/filtered_resources" hx-vals='{"type": "course", "category":"{{category}}"}'
-                            hx-target="#resources">
-                            course</option>
-                        <option hx-post="/filtered_resources" hx-vals='{"type": "audio", "category":"{{category}}"}'
-                            hx-target="#resources">
-                            audio</option>
-                        <option hx-post="/filtered_resources"
-                            hx-vals='{"type": "cheatsheet", "category":"{{category}}"}' hx-target="#resources">
-                            cheatsheet</option>
-                        <option hx-post="/filtered_resources" hx-vals='{"type": "website", "category":"{{category}}"}'
-                            hx-target="#resources">
-                            website</option>
+                    <select name="type" hx-post="/filtered_resources" hx-vals='{"category":"{{category}}"}' hx-target="#resources">
+                        <option value="video">video</option>
+                        <option value="article">article</option>
+                        <option value="book">book </option>
+                        <option value="github">github</option>
+                        <option value="course">course</option>
+                        <option value="audio">audio</option>
+                        <option value="cheatsheet">cheatsheet</option>
+                        <option value="website">website</option>
                     </select>
                 </div>
             </div>

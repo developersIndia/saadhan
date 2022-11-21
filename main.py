@@ -35,6 +35,14 @@ def category():
     )
 
 
+@app.route("/contributors", methods=["GET"])
+def contributors():
+    contributors = resourcer.Resource.get_all_contributors()
+    return render_template(
+        "contributors.html", contributors=contributors["contributors"]
+    )
+
+
 @app.route("/filtered_resources", methods=["POST"])
 def filtered_resources():
     res_type = request.form.get("type")
