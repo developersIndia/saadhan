@@ -12,27 +12,34 @@ Saadhan is a resource hub for the [r/devlopersIndia](https://reddit.com/r/develo
 - The website is built using Flask as backend and [HTMX](https://htmx.org/) with [Bulma](https://bulma.io) as frontend.
 
 ## 🧰 Installation
+### Using Virtual environment 🎥
 
-1. Clone the repo
-
-   ```bash
-   git clone https://github.com/developersIndia/saadhan.git
-   ```
-2. Initialise a virtual environment.
+1. Initialise a virtual environment.
 
    ```bash
    cd saadhan
    python3 -m venv venv
    source venv/bin/activate
    ```
-3. Install dependencies
+2. Install dependencies
 
    ```bash
    pip install -r requirements.txt
    ```
-4. Run development server.
+3. Run development server.
    ```bash
    make run
+   ```
+
+### Using Docker 🐬
+
+1. Build docker image
+   ```make
+   make build-docker
+   ```
+2. Run image
+   ```make
+   make docker
    ```
 
 # 📜 License

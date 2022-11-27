@@ -59,3 +59,6 @@ def filtered_resources():
         return render_template("filtered_resources.html", resources=resources)
 
     return "Wuba luba dub dub"
+
+if __name__ == "__main__":
+    app.run(debug=True)
