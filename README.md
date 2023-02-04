@@ -4,7 +4,7 @@ Saadhan is a resource hub for the [r/developersIndia](https://reddit.com/r/devel
 
 [![Discord](https://img.shields.io/discord/669880381649977354?color=%237289da&label=Discord&logo=Discord)](https://discordapp.com/invite/MKXMSNC)
 [![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/developersIndia?style=social)](https://www.reddit.com/r/developersIndia/)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors-)
 
 ## ❓ What is this
 - Saadhan is an app to aggregate and provide tech resources to learn from.
@@ -49,3 +49,25 @@ This project is licensed under the GPL-3.0 License. See the [LICENSE](LICENSE) f
 # 👋 Contributing
 
 Please read the [CONTRIBUTING](CONTRIBUTING.md) guidelines for the process of submitting pull requests to us.
+
+## Contributors ✨
+
+Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
+<table>
+  <tbody>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/the-sinner"><img src="https://avatars.githubusercontent.com/u/34604329?v=4?s=100" width="100px;" alt="Shalabh Agarwal"/><br /><sub><b>Shalabh Agarwal</b></sub></a><br /><a href="https://github.com/developersIndia/saadhan/commits?author=the-sinner" title="Code">💻</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<!-- markdownlint-restore -->
+<!-- prettier-ignore-end -->
+
+<!-- ALL-CONTRIBUTORS-LIST:END -->
+
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
