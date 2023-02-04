@@ -1,13 +1,10 @@
 # saadhan
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 Saadhan is a resource hub for the [r/developersIndia](https://reddit.com/r/developersIndia) community
 
 [![Discord](https://img.shields.io/discord/669880381649977354?color=%237289da&label=Discord&logo=Discord)](https://discordapp.com/invite/MKXMSNC)
 [![Subreddit subscribers](https://img.shields.io/reddit/subreddit-subscribers/developersIndia?style=social)](https://www.reddit.com/r/developersIndia/)
-
+[![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors-)
 
 ## ❓ What is this
 - Saadhan is an app to aggregate and provide tech resources to learn from.
