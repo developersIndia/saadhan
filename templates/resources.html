@@ -48,6 +48,13 @@
             <div class="card-content">
                 <div class="content">
                     <p class="title is-4">{{res.title}}</p>
+                    {% if res.reviews %}
+                    <hr />
+                    <h5 class="subtitle is-6">Reviews</h5>
+                    {% for review in res.reviews %}
+                    <p>"{{review}}"</p>
+                    {% endfor %}
+                    {% endif %}
                 </div>
                 <span class="tag is-danger">{{res.level}}</span>
                 <footer class="card-footer">
