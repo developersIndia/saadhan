@@ -61,7 +61,6 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tbody>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/the-sinner"><img src="https://avatars.githubusercontent.com/u/34604329?v=4?s=100" width="100px;" alt="Shalabh Agarwal"/><br /><sub><b>Shalabh Agarwal</b></sub></a><br /><a href="https://github.com/developersIndia/saadhan/commits?author=the-sinner" title="Code">💻</a></td>
-      <td align="center" valign="top" width="14.28%"><a href="https://github.com/HarshRaj2717"><img src="https://avatars.githubusercontent.com/u/90465144?v=4?s=100" width="100px;" alt="Harsh Raj"/><br /><sub><b>Harsh Raj</b></sub></a><br /><a href="https://github.com/developersIndia/saadhan/commits?author=HarshRaj2717" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
