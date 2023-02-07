@@ -51,6 +51,15 @@
                 </div>
                 <span class="tag is-danger">{{res.level}}</span>
                 <span class="tag is-info">{{res.type}}</span>
+                <div class="content">
+                    {% if res.reviews %}
+                        <hr />
+                        <h5 class="subtitle is-5">Reviews</h5>
+                        {% for review in res.reviews %}
+                            <p>"{{review}}"</p>
+                        {% endfor %}
+                    {% endif %}
+                </div>
                 <footer class="card-footer">
                     <a href={{res.url}} class="card-footer-item" rel="noreferrer noopener" target="_blank">Open Link</a>
                     <a target="_blank"
