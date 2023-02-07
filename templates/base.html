@@ -9,24 +9,26 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
   <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/developersIndia/assets/main/favicons/favicon.ico">
   <style>
+    *{
+      margin:0;
+    }
     html{
-      height: 100%;
-      box-sizing: border-box;
+      overflow-y: auto;
+
     }
     body{
-      margin: 0;
-      position: relative;
-      min-height: 100%;
-      padding-bottom: 6rem;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
     }
+    main{
+      flex-grow: 1;
+      padding-bottom: 10px;
+    }
+    
     footer{
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      left: 0;
-    }
-    .container{
-      flex: 1;
+      margin-top: 5rem;
+      height: 2rem;   
     }
     a {
       color: #E4376D;
@@ -43,7 +45,6 @@
 </head>
 
 <body>
-  <div>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
       <!-- <a class="navbar-item" href="https://bulma.io">
@@ -89,15 +90,17 @@
       </div>
     </div>
   </nav>
-    <div class="content is-vcentered has-text-centered">
-      <h1 class="title is-2 is-center">saadhan - resource hub by <a
-          href="https://reddit.com/r/developersIndia">r/developersIndia</a></h1>
-    </div>
-    
-    <div class="container">
-      {% block content %}
-      {% endblock content %}
-    </div>
+  <main>  
+      <div class="content is-vcentered has-text-centered">
+        <h1 class="title is-2 is-center">saadhan - resource hub by <a
+            href="https://reddit.com/r/developersIndia">r/developersIndia</a></h1>
+      </div>
+      
+      <div class="container">
+        {% block content %}
+        {% endblock content %}
+      </div>
+  </main>
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
