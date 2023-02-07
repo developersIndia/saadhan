@@ -51,6 +51,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "MohitBansal321",
+      "name": "Mohit Bansal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/78220157?v=4",
+      "profile": "https://github.com/MohitBansal321",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
