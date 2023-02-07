@@ -42,6 +42,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "siduck",
+      "name": "Sidhanth Rathod",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59060246?v=4",
+      "profile": "http://nvchad.com",
+      "contributions": [
+        "bug"
+      ]
     }
   ],
   "contributorsPerLine": 7,
