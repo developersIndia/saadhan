@@ -1,3 +1,4 @@
+{% if resources|length > 1 %}
 {% for res in resources %}
 <div class="card">
     <div class="card-content">
@@ -7,7 +8,7 @@
         <span class="tag is-danger">{{res.level}}</span>
         <span class="tag is-danger">{{res.type}}</span>
         <footer class="card-footer">
-                <a href={{res.url}} class="card-footer-item" rel="noreferrer noopener" target="_blank">Open Link</a>
+            <a href={{res.url}} class="card-footer-item" rel="noreferrer noopener" target="_blank">Open Link</a>
             <a target="_blank"
                 href="http://twitter.com/share?text=Hey, checkout this resource {{res.title}} via saadhan.devsindia.in&url={{res.url}}&hashtags=devsindia"
                 class="card-footer-item">Tweet</a>
@@ -15,3 +16,11 @@
     </div>
 </div>
 {% endfor %}
+{% else %}
+<div class="icon-text">
+    <span class="icon has-text-danger">
+        <i class="fas fa-ban"></i>
+    </span>
+    <span>No Data to display</span>
+</div>
+{% endif %}
