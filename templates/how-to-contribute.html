@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&family=Roboto+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://raw.githubusercontent.com/developersIndia/assets/main/favicons/favicon.ico"
+    />
+    <title>How to Contribute</title>
+
+    <style>
+      @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
+
+      * {
+        background-color: whitesmoke;
+      }
+
+      body {
+        font-family: "Manrope", sans-serif;
+      }
+
+      .main-main {
+        width: 80%;
+        padding: 2rem 8rem;
+      }
+
+      h1 {
+      }
+
+      hr {
+        border: 0;
+        height: 1px;
+        background: #333;
+        background-image: linnear-gradiet(to right, #ccc, #333, #ccc);
+      }
+
+      table {
+        border: 1px solid black;
+        border-collapse: collapse;
+        width: 950px;
+        /* text-align: center; */
+      }
+
+      tr,
+      td,
+      th {
+        border: 1px solid black;
+        padding: 1%;
+      }
+
+      .left {
+        text-align: center;
+        width: 75px;
+      }
+
+      /* td.left > button{
+        text-align: center;
+ 
+      } */
+      textarea {
+        resize: none;
+        height: 155px;
+        width: 950px;
+        background-color: #eaeaea;
+      }
+
+      textarea ::-webkit-scrollbar {
+        display: none;
+      }
+
+      button {
+        border: none;
+        margin: 0;
+        padding: 0% 0.3%;
+        width: auto;
+        overflow: visible;
+        font-family: "Roboto Mono", monospace;
+        font-weight: 500;
+        background-color: #e5e5e5;
+        border-radius: 5px;
+        color: inherit;
+        line-height: normal;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header"></div>
+    <div class="main-main">
+      <div class="header">
+        <h1>Contributing to Developers India Resources</h1>
+        <hr />
+        <p>
+          First off, thanks for taking the time to contribute! 🎉 Make sure you
+          follow below guidelines before contributing.
+        </p>
+      </div>
+      <div class="main-body">
+        <h2>What qualifies as a "resource"?</h2>
+        <hr />
+        <div class="content-1">
+          <p>
+            Anything which can be used/referenced to learn something. We only
+            accept following types of resources:
+          </p>
+          <ol>
+            <li>Book</li>
+            <li>Video</li>
+            <li>Article</li>
+            <li>Cheatsheet</li>
+            <li>Online Course (Free/Paid)</li>
+            <li>Github Repository</li>
+            <li>Audio (any podcasts)</li>
+            <li>
+              Website (Anything dedicated to learning one thing. For ex.
+              javascript.info qualifies as a "Website" resource for
+              <button>JavaScript</button> whereas
+              <button>colorlib.com</button> doesn't qualify as a resource for
+              "CSS".
+            </li>
+          </ol>
+        </div>
+        <div class="content-2">
+          <h2>How to add a new resource?</h2>
+          <hr />
+          <ol>
+            <li>
+              Figure out the correct directory for your resource, E.g. If you
+              are adding a "Python" resource, you will have to edit the
+              index.json file in languages/python directory. <br />
+              <q>
+                | If no appropriate directory exists for your resource, add it
+                inside <button>miscellaneous/index.json</button>.
+              </q>
+            </li>
+            <li>
+              <p>
+                Go to the bottom of the json file and add a object like this.
+              </p>
+              <textarea disabled>
+{
+    "title":"",
+    "url":"",
+    "type":"",
+    "level":"",
+    "reviews": []
+}</textarea
+              >
+              <div class="table">
+                <p>
+                  Reference the below table for description of each JSON key.
+                </p>
+                <table>
+                  <tr>
+                    <th class="left">Key</th>
+                    <th>Description</th>
+                  </tr>
+                  <tr>
+                    <td class="left"><button>title</button></td>
+                    <td>
+                      The title of resource. If you are contributing a book
+                      resource you can choose to mention the author
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left"><button>url</button></td>
+                    <td>
+                      The permalink to the resource. No links that redirect
+                      anywhere.
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left"><button>type</button></td>
+                    <td>
+                      <span>What type of resource is this:</span><br />
+                      <ol>
+                        <li><button>book</button></li>
+                        <li><button>video</button></li>
+                        <li><button>article</button></li>
+                        <li><button>cheatsheet</button></li>
+                        <li><button>course</button></li>
+                        <li><button>github</button></li>
+                        <li><button>audio</button></li>
+                        <li><button>website</button></li>
+                      </ol>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left"><button>level</button></td>
+                    <td>
+                      <span
+                        >What is the best audience for consuming this
+                        resource:</span
+                      ><br />
+                      <ol>
+                        <li><button>beginner</button></li>
+                        <li><button>intermediate</button></li>
+                        <li><button>advanced</button></li>
+                        <li><button>everyone</button></li>
+                      </ol>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="left"><button>reviews</button></td>
+                    <td>
+                      <span>Add you review of this resource.</span>
+                      <ul>
+                        <li>What did you learn from it?</li>
+                        <li>What was special or interesting about it?</li>
+                        <li>Why do you recommend this resource?</li>
+                      </ul>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <p>This is how a correct object looks like:</p>
+              <textarea disabled>
+{
+  "title":"learnopengl.com",
+  "url":"https://learnopengl.com/",
+  "type":"book",
+  "level":"everyone",
+  "reviews":[
+  "You should only follow concepts here, not api"
+    ]
+}</textarea
+              >
+              <p>
+                We highly encourage contributors to add their review to provide
+                a community aspect for the resource. If you have nothing to say
+                about the resource you can omit adding the "reviews" key.
+              </p>
+            </li>
+            <li>
+              <p>
+                Make you changes to <button>feature</button> branch & send a PR
+                (See if there is already an open PR with the same contribution).
+              </p>
+            </li>
+            <li>
+              <p>
+                Feel free to ask doubts, just open an
+                <a
+                  href="https://github.com/developersIndia/resources/issues/new/choose"
+                  >issue.</a
+                >
+              </p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
