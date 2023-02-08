@@ -8,36 +8,43 @@
   <title>Saadhan by r/developersIndia</title>
   <meta name="google-site-verification" content="jeqscIfDl_A3eUsQzbMRqd74G3WaI1GHVaV3DHkDD4A" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/developersIndia/assets/main/favicons/favicon.ico">
+  <link rel="icon" type="image/x-icon"
+    href="https://raw.githubusercontent.com/developersIndia/assets/main/favicons/favicon.ico">
   <style>
-    *{
-      margin:0;
+    * {
+      margin: 0;
     }
-    html{
+
+    html {
       overflow-y: auto;
 
     }
-    body{
+
+    body {
       display: flex;
       flex-direction: column;
       min-height: 100vh;
     }
-    main{
+
+    main {
       flex-grow: 1;
       padding-bottom: 10px;
     }
-    
-    footer{
+
+    footer {
       margin-top: 5rem;
-      height: 2rem;   
+      height: 2rem;
     }
+
     a {
       color: #E4376D;
     }
+
     .grid-container {
       display: grid;
       grid-gap: 1rem;
     }
+
     .grid-container.grid-repeat-5 {
       grid-template-columns: repeat(5, 1fr);
     }
@@ -51,14 +58,14 @@
       <!-- <a class="navbar-item" href="https://bulma.io">
         <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
       </a> -->
-  
+
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
     </div>
-  
+
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
         <a href="/" class="navbar-item">
@@ -74,7 +81,7 @@
           Wiki
         </a>
       </div>
-  
+
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttons">
@@ -89,16 +96,16 @@
       </div>
     </div>
   </nav>
-  <main>  
-      <div class="content is-vcentered has-text-centered">
-        <h1 class="title is-2 is-center">saadhan - resource hub by <a
-            href="https://reddit.com/r/developersIndia">r/developersIndia</a></h1>
-      </div>
-      
-      <div class="container">
-        {% block content %}
-        {% endblock content %}
-      </div>
+  <main>
+    <div class="content is-vcentered has-text-centered">
+      <h1 class="title is-2 is-center">saadhan - resource hub by <a
+          href="https://reddit.com/r/developersIndia">r/developersIndia</a></h1>
+    </div>
+
+    <div class="container">
+      {% block content %}
+      {% endblock content %}
+    </div>
   </main>
   <footer class="footer">
     <div class="content has-text-centered">
@@ -112,7 +119,16 @@
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.4/randomColor.min.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  <script src={{ url_for('static', filename='js/custom.js') }}></script>
+  <script src={{ url_for('static', filename='js/custom.js' ) }}></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-QLB0N16RL5"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-QLB0N16RL5');
+  </script>
 </body>
 
 </html>
