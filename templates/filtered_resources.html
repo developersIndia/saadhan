@@ -17,10 +17,12 @@
 </div>
 {% endfor %}
 {% else %}
-<div class="icon-text">
-    <span class="icon has-text-danger">
-        <i class="fas fa-ban"></i>
-    </span>
-    <span>No Data to display</span>
+<div class="columns is-centered mt-4">
+    <div class="column is-half-desktop">
+        <figure class="image">
+            <img alt="No data to display" src={{ url_for('static', filename='assets/svgs/no-data-illustration.svg' ) }}>
+        </figure>
+        <p class="has-text-centered mt-4">No data to display</p>
+    </div>
 </div>
 {% endif %}
