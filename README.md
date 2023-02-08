@@ -66,6 +66,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://sid4stuff.tech/"><img src="https://avatars.githubusercontent.com/u/78897025?v=4?s=100" width="100px;" alt="K Hari Aneesh Siddhartha"/><br /><sub><b>K Hari Aneesh Siddhartha</b></sub></a><br /><a href="https://github.com/developersIndia/saadhan/commits?author=ansid0102" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="http://nvchad.com"><img src="https://avatars.githubusercontent.com/u/59060246?v=4?s=100" width="100px;" alt="Sidhanth Rathod"/><br /><sub><b>Sidhanth Rathod</b></sub></a><br /><a href="https://github.com/developersIndia/saadhan/issues?q=author%3Asiduck" title="Bug reports">🐛</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/MohitBansal321"><img src="https://avatars.githubusercontent.com/u/78220157?v=4?s=100" width="100px;" alt="Mohit Bansal"/><br /><sub><b>Mohit Bansal</b></sub></a><br /><a href="https://github.com/developersIndia/saadhan/commits?author=MohitBansal321" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/mustafa-kapadia1483"><img src="https://avatars.githubusercontent.com/u/60058032?v=4?s=100" width="100px;" alt="Mustafa Kapadia"/><br /><sub><b>Mustafa Kapadia</b></sub></a><br /><a href="https://github.com/developersIndia/saadhan/commits?author=mustafa-kapadia1483" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
