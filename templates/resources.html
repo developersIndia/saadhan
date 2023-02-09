@@ -11,13 +11,8 @@
             <div class="control">
                 <div class="select">
                     <form action="">
-                        <select name="level" hx-vals='{"category":"{{category}}"}' hx-post="/filtered_resources"
-                            hx-target="#resources">
-                            <option value="beginner">beginner</option>
-                            <option value="intermediate">intermediate</option>
-                            <option value="advanced">advanced</option>
-                            <option value="everyone">everyone</option>
-                        </select>
+                        {{ level_form.hidden_tag() }}
+                        {{ level_form.level(**{'hx-vals': '{"category":"%s"}'|format(category), 'hx-post': url_for('filtered_resources'), 'hx-target': '#resources'}) }}
                     </form>
                 </div>
             </div>
@@ -27,16 +22,10 @@
             <p class="subtitle is-4">Filter by type</p>
             <div class="control">
                 <div class="select">
-                    <select name="type" hx-post="/filtered_resources" hx-vals='{"category":"{{category}}"}' hx-target="#resources">
-                        <option value="video">video</option>
-                        <option value="article">article</option>
-                        <option value="book">book </option>
-                        <option value="github">github</option>
-                        <option value="course">course</option>
-                        <option value="audio">audio</option>
-                        <option value="cheatsheet">cheatsheet</option>
-                        <option value="website">website</option>
-                    </select>
+                    <form action="">
+                        {{ type_form.hidden_tag() }}
+                        {{ type_form.type(**{'hx-vals': '{"category":"%s"}'|format(category), 'hx-post': url_for('filtered_resources'), 'hx-target': '#resources'}) }}
+                    </form>
                 </div>
             </div>
         </div>
