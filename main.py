@@ -42,6 +42,12 @@ def contributors():
         "contributors.html", contributors=contributors["contributors"]
     )
 
+@app.route("/how-to-contribute", methods=["GET"])
+def how_to_contribute():
+    return render_template(
+        "how-to-contribute.html"
+    )
+
 
 @app.route("/filtered_resources", methods=["POST"])
 def filtered_resources():

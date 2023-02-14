@@ -1,205 +1,68 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
-    />
+{% extends 'base.html' %}
+{% block content %}
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500&family=Roboto+Mono:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://raw.githubusercontent.com/developersIndia/assets/main/favicons/favicon.ico"
-    />
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
-    <title>How to Contribute</title>
-
-    <style>
-      @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
-
-      body {
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-      }
-
-      .main-main {
-        width: 80%;
-        margin: 3rem auto;
-        padding: 3rem auto;
-      }
-
-      hr {
-        border: 0;
-        height: 1px;
-        background: #333;
-        background-image: linnear-gradiet(to right, #ccc, #333, #ccc);
-        margin-top: 12px;
-        margin-bottom: 16px;
-      }
-
-      a {
-        color: #e4376d;
-      }
-
-      .imp {
-        border: none;
-        margin: 0;
-        padding: 0% 0.3%;
-        width: auto;
-        overflow: visible;
-        font-family: "Roboto Mono", monospace;
-        font-weight: 500;
-        background-color: #e5e5e5;
-        border-radius: 5px;
-        color: inherit;
-        line-height: normal;
-      }
-
-      pre {
-        padding: 10px 10px 10px 25px;
-      }
-
-      .header-1,
-      .header-2 {
-        margin-bottom: 24px;
-      }
-
-      .header-2 {
-        margin-top: 24px;
-      }
-    </style>
-  </head>
-
-  <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a
-          role="button"
-          class="navbar-burger"
-          aria-label="menu"
-          aria-expanded="false"
-          data-target="navbarBasicExample"
-        >
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-          <span aria-hidden="true"></span>
-        </a>
-      </div>
-      <div id="navbarBasicExample" class="navbar-menu">
-        <div class="navbar-start">
-          <a href="/" class="navbar-item"> Home </a>
-          <a href="/templates/how-to-contribute.html" class="navbar-item">
-            How to contribute
-          </a>
-          <a href="/contributors" class="navbar-item"> Contributors </a>
-          <a href="https://wiki.developersindia.in/" class="navbar-item">
-            Wiki
-          </a>
-        </div>
-        <div class="navbar-end">
-          <div class="navbar-item">
-            <div class="buttons">
-              <a
-                style="background-color: #e4376d"
-                href="https://reddit.com/r/developersIndia"
-                class="button is-primary"
-              >
-                <strong>Join Us</strong>
-              </a>
-              <a href="https://discord.gg/MKXMSNC" class="button is-light">
-                Chat
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </nav>
-    <div class="main-main">
-      <div
-        class="header-1 is-flex is-align-items-center is-justify-content-space-between"
-      >
-        <h1 class="title is-2" style="margin-bottom: 0px">
-          Contribute to developersIndia resources
-        </h1>
-        <div class="">
-          <a
-            class="github-button"
-            href="https://github.com/developersIndia/resources/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork developersIndia/resources on GitHub"
-            >Fork</a
-          >
-          <a
-            class="github-button"
-            href="https://github.com/developersIndia/resources"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star developersIndia/resources on GitHub"
-            >Star</a
-          >
-        </div>
-      </div>
-      <hr />
-      <p class="subtitle is-5">
-        First off, thanks for taking the time to contribute! 🎉 Make sure you
-        follow below guidelines before contributing.
+<div class="main-main">
+  <div class="header-1 is-flex is-align-items-center is-justify-content-space-between">
+    <h1 class="title is-2" style="margin-bottom: 0px">
+      Contribute to developersIndia resources
+    </h1>
+    <div class="">
+      <a class="github-button" href="https://github.com/developersIndia/resources/fork" data-icon="octicon-repo-forked"
+        data-size="large" data-show-count="true" aria-label="Fork developersIndia/resources on GitHub">Fork</a>
+      <a class="github-button" href="https://github.com/developersIndia/resources" data-icon="octicon-star"
+        data-size="large" data-show-count="true" aria-label="Star developersIndia/resources on GitHub">Star</a>
+    </div>
+  </div>
+  <hr />
+  <p class="subtitle is-5">
+    First off, thanks for taking the time to contribute! 🎉 Make sure you
+    follow below guidelines before contributing.
+  </p>
+  <div class="main-body">
+    <div class="content">
+      <p class="title is-3" style="margin-bottom: 0px">
+        What qualifies as a "resource"?
       </p>
-      <div class="main-body">
-        <div class="content">
-          <p class="title is-3" style="margin-bottom: 0px">
-            What qualifies as a "resource"?
+      <hr />
+      <div class="subtitle is-5">
+        Anything which can be used/referenced to learn something. We only
+        accept following types of resources:
+      </div>
+      <ol>
+        <li>Book</li>
+        <li>Video</li>
+        <li>Article</li>
+        <li>Cheatsheet</li>
+        <li>Online Course (Free/Paid)</li>
+        <li>Github Repository</li>
+        <li>Audio (any podcasts)</li>
+        <li>
+          Website (Anything dedicated to learning one thing. For ex.
+          javascript.info qualifies as a "Website" resource for
+          <button class="imp">JavaScript</button> whereas
+          <button class="imp">colorlib.com</button> doesn't qualify as a
+          resource for "CSS".
+        </li>
+      </ol>
+    </div>
+    <div class="content">
+      <h2>How to add a new resource?</h2>
+      <hr />
+      <ol>
+        <li>
+          Figure out the correct directory for your resource, E.g. If you
+          are adding a "Python" resource, you will have to edit the
+          index.json file in languages/python directory. <br />
+          <blockquote>
+            If no appropriate directory exists for your resource, add it
+            inside <button class="imp">miscellaneous/index.json</button>.
+          </blockquote>
+        </li>
+        <li>
+          <p>
+            Go to the bottom of the json file and add a object like this.
           </p>
-          <hr />
-          <div class="subtitle is-5">
-            Anything which can be used/referenced to learn something. We only
-            accept following types of resources:
-          </div>
-          <ol>
-            <li>Book</li>
-            <li>Video</li>
-            <li>Article</li>
-            <li>Cheatsheet</li>
-            <li>Online Course (Free/Paid)</li>
-            <li>Github Repository</li>
-            <li>Audio (any podcasts)</li>
-            <li>
-              Website (Anything dedicated to learning one thing. For ex.
-              javascript.info qualifies as a "Website" resource for
-              <button class="imp">JavaScript</button> whereas
-              <button class="imp">colorlib.com</button> doesn't qualify as a
-              resource for "CSS".
-            </li>
-          </ol>
-        </div>
-        <div class="content">
-          <h2>How to add a new resource?</h2>
-          <hr />
-          <ol>
-            <li>
-              Figure out the correct directory for your resource, E.g. If you
-              are adding a "Python" resource, you will have to edit the
-              index.json file in languages/python directory. <br />
-              <blockquote>
-                If no appropriate directory exists for your resource, add it
-                inside <button class="imp">miscellaneous/index.json</button>.
-              </blockquote>
-            </li>
-            <li>
-              <p>
-                Go to the bottom of the json file and add a object like this.
-              </p>
-              <pre>
+          <pre>
 <code class="language-html" data-lang="html"><span>{</span>
 <span>    "title":"",</span>
 <span>    "url":"",</span>
@@ -208,77 +71,75 @@
 <span>    "reviews": []</span>
 <span>}</span></code>
 </pre>
-              <div class="table">
-                <p>
-                  Reference the below table for description of each JSON key.
-                </p>
-                <table class="table is-bordered is-striped is-fullwidth">
-                  <tr style="background-color: #e4376d">
-                    <th class="left" style="color: white">Key</th>
-                    <th style="color: white">Description</th>
-                  </tr>
-                  <tr>
-                    <td class="left"><button class="imp">title</button></td>
-                    <td>
-                      The title of resource. If you are contributing a book
-                      resource you can choose to mention the author
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="left"><button class="imp">url</button></td>
-                    <td>
-                      The permalink to the resource. No links that redirect
-                      anywhere.
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="left"><button class="imp">type</button></td>
-                    <td>
-                      <span>What type of resource is this:</span><br />
-                      <div class="skibidi">
-                        <ol>
-                          <li><button class="imp">book</button></li>
-                          <li><button class="imp">video</button></li>
-                          <li><button class="imp">article</button></li>
-                          <li><button class="imp">cheatsheet</button></li>
-                          <li><button class="imp">course</button></li>
-                          <li><button class="imp">github</button></li>
-                          <li><button class="imp">audio</button></li>
-                          <li><button class="imp">website</button></li>
-                        </ol>
-                      </div>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="left"><button class="imp">level</button></td>
-                    <td>
-                      <span
-                        >What is the best audience for consuming this
-                        resource:</span
-                      ><br />
-                      <ol>
-                        <li><button class="imp">beginner</button></li>
-                        <li><button class="imp">intermediate</button></li>
-                        <li><button class="imp">advanced</button></li>
-                        <li><button class="imp">everyone</button></li>
-                      </ol>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="left"><button class="imp">reviews</button></td>
-                    <td>
-                      <span>Add you review of this resource.</span>
-                      <ul>
-                        <li>What did you learn from it?</li>
-                        <li>What was special or interesting about it?</li>
-                        <li>Why do you recommend this resource?</li>
-                      </ul>
-                    </td>
-                  </tr>
-                </table>
-              </div>
-              <p>This is how a correct object looks like:</p>
-              <pre><code class="language-html" data-lang="html"><span>{</span>
+          <div class="table">
+            <p>
+              Reference the below table for description of each JSON key.
+            </p>
+            <table class="table is-bordered is-striped is-fullwidth">
+              <tr style="background-color: #e4376d">
+                <th class="left" style="color: white">Key</th>
+                <th style="color: white">Description</th>
+              </tr>
+              <tr>
+                <td class="left"><button class="imp">title</button></td>
+                <td>
+                  The title of resource. If you are contributing a book
+                  resource you can choose to mention the author
+                </td>
+              </tr>
+              <tr>
+                <td class="left"><button class="imp">url</button></td>
+                <td>
+                  The permalink to the resource. No links that redirect
+                  anywhere.
+                </td>
+              </tr>
+              <tr>
+                <td class="left"><button class="imp">type</button></td>
+                <td>
+                  <span>What type of resource is this:</span><br />
+                  <div class="skibidi">
+                    <ol>
+                      <li><button class="imp">book</button></li>
+                      <li><button class="imp">video</button></li>
+                      <li><button class="imp">article</button></li>
+                      <li><button class="imp">cheatsheet</button></li>
+                      <li><button class="imp">course</button></li>
+                      <li><button class="imp">github</button></li>
+                      <li><button class="imp">audio</button></li>
+                      <li><button class="imp">website</button></li>
+                    </ol>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td class="left"><button class="imp">level</button></td>
+                <td>
+                  <span>What is the best audience for consuming this
+                    resource:</span><br />
+                  <ol>
+                    <li><button class="imp">beginner</button></li>
+                    <li><button class="imp">intermediate</button></li>
+                    <li><button class="imp">advanced</button></li>
+                    <li><button class="imp">everyone</button></li>
+                  </ol>
+                </td>
+              </tr>
+              <tr>
+                <td class="left"><button class="imp">reviews</button></td>
+                <td>
+                  <span>Add you review of this resource.</span>
+                  <ul>
+                    <li>What did you learn from it?</li>
+                    <li>What was special or interesting about it?</li>
+                    <li>Why do you recommend this resource?</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <p>This is how a correct object looks like:</p>
+          <pre><code class="language-html" data-lang="html"><span>{</span>
 <span>    "title":"learnopengl.com",</span>
 <span>    "url":"https://learnopengl.com/",</span>
 <span>    "type":"book",</span>
@@ -287,79 +148,45 @@
 <span>        "You should only follow concepts here, not api"</span>
 <span>    ]</span>
 <span>}</span></code></pre>
-              <blockquote>
-                We highly encourage contributors to add their review to provide
-                a community aspect for the resource. If you have nothing to say
-                about the resource you can omit adding the "reviews" key.
-              </blockquote>
-            </li>
-            <li>
-              <p>
-                Make you changes to <button class="imp">feature</button> branch
-                & send a PR (See if there is already an open PR with the same
-                contribution).
-              </p>
-            </li>
-            <li>
-              <p>
-                Feel free to ask doubts, just open an
-                <a
-                  href="https://github.com/developersIndia/resources/issues/new/choose"
-                  >issue</a
-                >.
-              </p>
-            </li>
-          </ol>
-        </div>
-      </div>
-      <div
-        class="header-2 is-flex is-align-items-center is-justify-content-space-between"
-      >
-        <h1 class="title is-2" style="margin-bottom: 0px">
-          Contribute to saadhan website
-        </h1>
-        <div class="">
-          <a
-            class="github-button"
-            href="https://github.com/developersIndia/saadhan/fork"
-            data-icon="octicon-repo-forked"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Fork developersIndia/saadhan on GitHub"
-            >Fork</a
-          >
-          <a
-            class="github-button"
-            href="https://github.com/developersIndia/saadhan"
-            data-icon="octicon-star"
-            data-size="large"
-            data-show-count="true"
-            aria-label="Star developersIndia/saadhan on GitHub"
-            >Star</a
-          >
-        </div>
-      </div>
-      <hr />
-      <p>
-        The website is built using Flask as backend and
-        <a href="https://htmx.org/">HTMX</a> with
-        <a href="https://bulma.io">Bulma</a> as frontend.
-      </p>
+          <blockquote>
+            We highly encourage contributors to add their review to provide
+            a community aspect for the resource. If you have nothing to say
+            about the resource you can omit adding the "reviews" key.
+          </blockquote>
+        </li>
+        <li>
+          <p>
+            Make you changes to <button class="imp">feature</button> branch
+            & send a PR (See if there is already an open PR with the same
+            contribution).
+          </p>
+        </li>
+        <li>
+          <p>
+            Feel free to ask doubts, just open an
+            <a href="https://github.com/developersIndia/resources/issues/new/choose">issue</a>.
+          </p>
+        </li>
+      </ol>
     </div>
-    <footer class="footer">
-      <div class="content has-text-centered">
-        <p class="subtitle-5">
-          <strong>Saadhan</strong> by
-          <a href="https://developersindia.in/">r/developersIndia</a>. The
-          source code is licensed
-          <a href="https://github.com/developersIndia/saadhan/blob/main/LICENSE"
-            >GPL v3.0</a
-          >. The website content is licensed
-          <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
-            >CC BY NC SA 4.0</a
-          >.
-        </p>
-      </div>
-    </footer>
-  </body>
-</html>
+  </div>
+  <div class="header-2 is-flex is-align-items-center is-justify-content-space-between">
+    <h1 class="title is-2" style="margin-bottom: 0px">
+      Contribute to saadhan website
+    </h1>
+    <div class="">
+      <a class="github-button" href="https://github.com/developersIndia/saadhan/fork" data-icon="octicon-repo-forked"
+        data-size="large" data-show-count="true" aria-label="Fork developersIndia/saadhan on GitHub">Fork</a>
+      <a class="github-button" href="https://github.com/developersIndia/saadhan" data-icon="octicon-star"
+        data-size="large" data-show-count="true" aria-label="Star developersIndia/saadhan on GitHub">Star</a>
+    </div>
+  </div>
+  <hr />
+  <p>
+    This website is built using Flask as backend and
+    <a href="https://htmx.org/">HTMX</a> with
+    <a href="https://bulma.io">Bulma</a> as frontend.
+  </p>
+</div>
+
+{% endblock content %}
