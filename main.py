@@ -77,8 +77,9 @@ def category():
 @app.route("/contributors", methods=["GET"])
 def contributors():
     contributors = resourcer.Resource.get_all_contributors()
+    saadhan__contributors = resourcer.Resource.get_saadhan_contributors()
     return render_template(
-        "contributors.html", contributors=contributors["contributors"]
+        "contributors.html", contributors=contributors["contributors"]+saadhan__contributors["contributors"]
     )
 
 

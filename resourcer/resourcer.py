@@ -78,3 +78,7 @@ class Resource:
     def get_all_contributors():
         res = requests.get("https://raw.githubusercontent.com/developersIndia/resources/master/.all-contributorsrc").json()
         return res
+
+    def get_saadhan_contributors():
+        res = requests.get("https://raw.githubusercontent.com/developersIndia/saadhan/main/.all-contributorsrc").json()
+        return res
