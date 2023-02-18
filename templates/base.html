@@ -5,50 +5,25 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saadhan by r/developersIndia</title>
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ title }}">
+  <meta property="og:url" content="{{ url_for(request.endpoint, _external=True) }}" />
+	<meta name="twitter:site" content="@devsinindia">
+	<meta name="twitter:creator" content="@devsinindia">
+	<meta property="og:site_name" content="Saadhan - A resource hub by r/developersIndia">
+  <meta name="description" content="Saadhan is a comprehensive website created by the r/developersIndia community, which offers an extensive collection of resources to help you learn tech. Whether you are a beginner or an experienced professional, Saadhan has something for everyone. From articles and tutorials to videos and courses, you can find a wide range of tech-related content that will enhance your knowledge and skills.">
+	<meta property="og:description" content="Saadhan is a comprehensive website created by the r/developersIndia community, which offers an extensive collection of resources to help you learn tech. Whether you are a beginner or an experienced professional, Saadhan has something for everyone. From articles and tutorials to videos and courses, you can find a wide range of tech-related content that will enhance your knowledge and skills." />
+	<meta name="twitter:description" content="Saadhan is a comprehensive website created by the r/developersIndia community, which offers an extensive collection of resources to help you learn tech. Whether you are a beginner or an experienced professional, Saadhan has something for everyone. From articles and tutorials to videos and courses, you can find a wide range of tech-related content that will enhance your knowledge and skills.">
   <meta name="google-site-verification" content="jeqscIfDl_A3eUsQzbMRqd74G3WaI1GHVaV3DHkDD4A" />
+
+  <title>{{ title }}</title>
+
+  <link rel="canonical" href="{{ url_for(request.endpoint, _external=True) }}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
   <link rel="icon" type="image/x-icon"
     href="https://raw.githubusercontent.com/developersIndia/assets/main/favicons/favicon.ico">
-  <style>
-    * {
-      margin: 0;
-    }
-
-    html {
-      overflow-y: auto;
-
-    }
-
-    body {
-      display: flex;
-      flex-direction: column;
-      min-height: 100vh;
-    }
-
-    main {
-      flex-grow: 1;
-      padding-bottom: 10px;
-    }
-
-    footer {
-      margin-top: 5rem;
-      height: 2rem;
-    }
-
-    a {
-      color: #E4376D;
-    }
-
-    .grid-container {
-      display: grid;
-      grid-gap: 1rem;
-    }
-
-    .grid-container.grid-repeat-5 {
-      grid-template-columns: repeat(5, 1fr);
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/custom.css') }}">
   <script src="https://unpkg.com/htmx.org@1.8.4"></script>
 </head>
 

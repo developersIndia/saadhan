@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+}
+
+html {
+    overflow-y: auto;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex-grow: 1;
+    padding-bottom: 10px;
+}
+
+footer {
+    margin-top: 5rem;
+    height: 2rem;
+}
+
+a {
+    color: #E4376D;
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 1rem;
+}
+
+.grid-container.grid-repeat-5 {
+    grid-template-columns: repeat(5, 1fr);
+}
+
+p#\.contributor-name{
+    text-align: center;
+}

@@ -6,8 +6,8 @@
     {% for contributor in contributors %}
     <div class="grid-item">
         <a href="{{contributor.profile}}">
-            <img src="{{contributor.avatar_url}}" alt="">
-            <p class="subtitle is-4">{{contributor.name}}</p>
+            <img src="{{contributor.avatar_url}}" alt="{{contributor.name}}'s GitHub profile image">
+            <p id=".contributor-name" class="subtitle is-4">{{contributor.name}}</p>
         </a>
     </div>
     {% endfor %}
