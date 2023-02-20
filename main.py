@@ -5,6 +5,7 @@ from flask_wtf import FlaskForm
 from wtforms.fields import SelectField
 from dotenv import load_dotenv
 from resourcer import resourcer
+from resourcer.resourcer import CATEGORY_API_PATH,Resource
 
 BASE_DIR = Path(__file__).resolve().parent
 
@@ -119,6 +120,44 @@ def filtered_resources():
         return render_template("filtered_resources.html", resources=resources)
 
     return "Wuba luba dub dub"
+
+
+
+"""""
+
+THIS IS THE LOGIC TO AUTOMATICALLY ADD THE NEWLY UPADTED CONTENT TO THE WEBSITE
+
+""" ""
+
+
+CATEGORY_API_PATH_NEW= {
+    "python": "languages/python",
+    "javascript": "languages/javascript",
+    "c":"languages/c",
+    "cpp":"languages/c++",
+    "css":"languages/css",
+    "git": "tools/git",
+    "android": "app-development/android",
+    "flutter": "app-development/flutter",
+    "miscellaneous": "miscellaneous",
+    "machine-learning": "artificial-intelligence/machine-learning",
+    "deep-learning": "artificial-intelligence/deep-learning",
+    "dsa": "dsa",
+    "computer-graphics": "computer-graphics",
+    "computer-science": "computer-science",
+}
+
+
+while len(CATEGORY_API_PATH_NEW)!=len(CATEGORY_API_PATH):
+    value = {k: CATEGORY_API_PATH[k] for k in set(CATEGORY_API_PATH) - set(CATEGORY_API_PATH_NEW)}
+    if value is None:
+        pass
+    else:
+        CATEGORY_API_PATH_NEW.update(value)
+        for values in value.keys():
+            CATEGORIES[str(values).capitalize()] = str(value).capitalize()
+else:
+    pass
 
 
 if __name__ == "__main__":

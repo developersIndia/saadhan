@@ -36,8 +36,9 @@ CATEGORY_API_PATH = {
     "deep-learning": "artificial-intelligence/deep-learning",
     "dsa": "dsa",
     "computer-graphics": "computer-graphics",
-    "computer-science": "computer-science",
+    "computer-science": "computer-science"
 }
+
 
 requests_cache.install_cache("resource_cache", backend="memory", expire_after=180)
 
@@ -75,10 +76,15 @@ class Resource:
         return filtered_res
     
     # @classmethod
-    def get_all_contributors():
+    def get_all_contributors(self):
         res = requests.get("https://raw.githubusercontent.com/developersIndia/resources/master/.all-contributorsrc").json()
         return res
 
-    def get_saadhan_contributors():
+    def get_saadhan_contributors(self):
         res = requests.get("https://raw.githubusercontent.com/developersIndia/saadhan/main/.all-contributorsrc").json()
         return res
+
+
+
+
+
