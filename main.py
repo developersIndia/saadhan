@@ -62,13 +62,13 @@ CATEGORIES = {
 }
 
 
-@app.route("/", methods=["GET"])
+@app.get("/")
 def home():
     title = "Saadhan by r/developersIndia"
     return render_template("categories.html", categories=CATEGORIES, title=title)
 
 
-@app.route("/resources", methods=["GET"])
+@app.get("/resources")
 def category():
     category = request.args.get("category")
 
@@ -88,7 +88,7 @@ def category():
     )
 
 
-@app.route("/contributors", methods=["GET"])
+@app.get("/contributors")
 def contributors():
     contributors = resourcer.Resource.get_all_contributors()
     saadhan_contributors = resourcer.Resource.get_saadhan_contributors()
@@ -102,14 +102,14 @@ def contributors():
     )
 
 
-@app.route("/how-to-contribute", methods=["GET"])
+@app.get("/how-to-contribute")
 def how_to_contribute():
     return render_template(
         "how-to-contribute.html"
     )
 
 
-@app.route("/filtered_resources", methods=["POST"])
+@app.post("/filtered_resources")
 def filtered_resources():
     rsr = resourcer.Resource(request.form.get("category"))
     level_form = FilterLevelForm()
