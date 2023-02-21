@@ -39,3 +39,54 @@ a {
 p#\.contributor-name{
     text-align: center;
 }
+
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+
+  .main-main {
+    width: 80%;
+    margin: 3rem auto;
+    padding: 3rem auto;
+  }
+
+  hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linnear-gradiet(to right, #ccc, #333, #ccc);
+    margin-top: 12px;
+    margin-bottom: 16px;
+  }
+
+  a {
+    color: #e4376d;
+  }
+
+  .imp {
+    border: none;
+    margin: 0;
+    padding: 0% 0.3%;
+    width: auto;
+    overflow: visible;
+    font-family: "Roboto Mono", monospace;
+    font-weight: 500;
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    color: inherit;
+    line-height: normal;
+  }
+
+  pre {
+    padding: 10px 10px 10px 25px;
+  }
+
+  .header-1,
+  .header-2 {
+    margin-bottom: 24px;
+  }
+
+  .header-2 {
+    margin-top: 24px;
+  }

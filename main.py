@@ -42,7 +42,6 @@ class FilterTypeForm(FlaskForm):
         ],
     )
 
-
 app = Flask(__name__)
 app.config.from_object(Config)
 
@@ -100,6 +99,13 @@ def contributors():
         contributors=contributors["contributors"]
         + saadhan_contributors["contributors"],
         title=title,
+    )
+
+
+@app.route("/how-to-contribute", methods=["GET"])
+def how_to_contribute():
+    return render_template(
+        "how-to-contribute.html"
     )
 
 
