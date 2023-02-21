@@ -68,6 +68,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/MohitBansal321"><img src="https://avatars.githubusercontent.com/u/78220157?v=4?s=100" width="100px;" alt="Mohit Bansal"/><br /><sub><b>Mohit Bansal</b></sub></a><br /><a href="https://github.com/developersIndia/saadhan/commits?author=MohitBansal321" title="Code">💻</a></td>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/mustafa-kapadia1483"><img src="https://avatars.githubusercontent.com/u/60058032?v=4?s=100" width="100px;" alt="Mustafa Kapadia"/><br /><sub><b>Mustafa Kapadia</b></sub></a><br /><a href="https://github.com/developersIndia/saadhan/commits?author=mustafa-kapadia1483" title="Code">💻</a></td>
     </tr>
+    <tr>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/darshil-here"><img src="https://avatars.githubusercontent.com/u/104206815?v=4?s=100" width="100px;" alt="Darshil Prajapati"/><br /><sub><b>Darshil Prajapati</b></sub></a><br /><a href="https://github.com/developersIndia/saadhan/commits?author=darshil-here" title="Code">💻</a></td>
+    </tr>
   </tbody>
 </table>
 
