@@ -70,6 +70,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     </tr>
     <tr>
       <td align="center" valign="top" width="14.28%"><a href="https://github.com/darshil-here"><img src="https://avatars.githubusercontent.com/u/104206815?v=4?s=100" width="100px;" alt="Darshil Prajapati"/><br /><sub><b>Darshil Prajapati</b></sub></a><br /><a href="https://github.com/developersIndia/saadhan/commits?author=darshil-here" title="Code">💻</a></td>
+      <td align="center" valign="top" width="14.28%"><a href="https://github.com/heppymxm"><img src="https://avatars.githubusercontent.com/u/130273246?v=4?s=100" width="100px;" alt="Kartik Kumar"/><br /><sub><b>Kartik Kumar</b></sub></a><br /><a href="https://github.com/developersIndia/saadhan/commits?author=heppymxm" title="Code">💻</a></td>
     </tr>
   </tbody>
 </table>
