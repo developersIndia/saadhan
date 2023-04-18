@@ -24,6 +24,6 @@ tomli==2.0.1
 typing_extensions==4.4.0
 url-normalize==1.4.3
 urllib3==1.26.12
-Werkzeug==2.2.2
+Werkzeug==2.2.3
 WTForms==3.0.1
 zipp==3.10.0
