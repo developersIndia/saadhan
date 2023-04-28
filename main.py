@@ -59,6 +59,7 @@ CATEGORIES = {
     "Git": "git",
     "Android": "android",
     "Surprise Me!": "miscellaneous",
+    "DevOps": "devops",
 }
 
 
