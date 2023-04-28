@@ -28,7 +28,10 @@ CATEGORY_API_PATH = {
     "c":"languages/c",
     "cpp":"languages/c++",
     "css":"languages/css",
+    "ruby": "languages/ruby",
+    "sql":"languages/sql",
     "git": "tools/git",
+    "go":"languages/go",
     "android": "app-development/android",
     "flutter": "app-development/flutter",
     "miscellaneous": "miscellaneous",
@@ -37,6 +40,7 @@ CATEGORY_API_PATH = {
     "dsa": "dsa",
     "computer-graphics": "computer-graphics",
     "computer-science": "computer-science",
+    "devops": "devops",
 }
 
 requests_cache.install_cache("resource_cache", backend="memory", expire_after=180)
