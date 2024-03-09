@@ -59,13 +59,17 @@
 
       <div class="navbar-end">
         <div class="navbar-item">
-          <div class="buttons">
+          <div class="buttonGroup">
+          <div class="primaryButton">
             <a style="background-color: #E4376D;" href="https://reddit.com/r/developersIndia" class="button is-primary">
               <strong>Join Us</strong>
             </a>
+          </div>
+          <div class="secondaryButton">
             <a href="https://discord.gg/MKXMSNC" class="button is-light">
-              Chat
+              Discord
             </a>
+          </div>
           </div>
         </div>
       </div>
@@ -73,6 +77,9 @@
   </nav>
   <main>
     <div class="content is-vcentered has-text-centered">
+              <figure class="is-2 is-center">
+            <img alt="No data to display" src={{ url_for('static', filename='assets/svgs/logo.svg' ) }}>
+        </figure>
       <h1 class="title is-2 is-center">saadhan - resource hub by <a
           href="https://reddit.com/r/developersIndia">r/developersIndia</a></h1>
     </div>

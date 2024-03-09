@@ -84,9 +84,57 @@ body {
 
   .header-1,
   .header-2 {
-    margin-bottom: 24px;
+    margin-bottom: 3rem;
+
   }
 
   .header-2 {
     margin-top: 24px;
   }
+
+  .card {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: none;
+    border: 1.5px #f0f0f0 solid;
+    border-radius: 1rem;
+  }
+
+  .navbar {
+    margin-bottom: 2rem;
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+    margin-top: 1rem;
+      -webkit-user-select: none;
+        /* Safari */
+        -ms-user-select: none;
+        /* IE 10 and IE 11 */
+        user-select: none;
+        /* Standard syntax */
+
+  }
+
+  .logo {
+    display: flex;
+  -webkit-user-select: none;
+    /* Safari */
+    -ms-user-select: none;
+    /* IE 10 and IE 11 */
+    user-select: none;
+    /* Standard syntax */
+  }
+
+  .buttonGroup {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .primaryButton {
+    margin-right: 0.5rem;
+    margin-left: 0.5rem;
+  }
+  
+        .secondaryButton {
+          margin-right: 0.5rem;
+          margin-left: 0.5rem;
+        }
