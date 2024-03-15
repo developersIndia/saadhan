@@ -41,6 +41,8 @@ CATEGORY_API_PATH = {
     "computer-graphics": "computer-graphics",
     "computer-science": "computer-science",
     "devops": "devops",
+    "rust": "languages/rust",
+    "typescript": "languages/typescript",
 }
 
 requests_cache.install_cache("resource_cache", backend="memory", expire_after=180)

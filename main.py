@@ -63,6 +63,8 @@ CATEGORIES = {
     "Android": "android",
     "Surprise Me!": "miscellaneous",
     "DevOps": "devops",
+    "Rust": "rust",
+    "TypeScript": "typescript",
 }
 
 
