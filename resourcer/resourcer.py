@@ -25,13 +25,15 @@ HEADERS = {
 CATEGORY_API_PATH = {
     "python": "languages/python",
     "javascript": "languages/javascript",
-    "c":"languages/c",
-    "cpp":"languages/c++",
-    "css":"languages/css",
+    "c": "languages/c",
+    "cpp": "languages/c++",
+    "css": "languages/css",
     "ruby": "languages/ruby",
-    "sql":"languages/sql",
-    "git": "tools/git",
-    "go":"languages/go",
+    "sql": "languages/sql",
+    "rust": "languages/rust",
+    "java": "languages/java",
+    "typescript": "languages/typescript",
+    "go": "languages/go",
     "android": "app-development/android",
     "flutter": "app-development/flutter",
     "miscellaneous": "miscellaneous",
@@ -40,9 +42,10 @@ CATEGORY_API_PATH = {
     "dsa": "dsa",
     "computer-graphics": "computer-graphics",
     "computer-science": "computer-science",
+    "operating-systems": "operating-systems",
     "devops": "devops",
-    "rust": "languages/rust",
-    "typescript": "languages/typescript",
+    "git": "tools/git",
+    "linux": "tools/linux",
 }
 
 requests_cache.install_cache("resource_cache", backend="memory", expire_after=180)
@@ -79,12 +82,16 @@ class Resource:
             if r.get("level") == level:
                 filtered_res.append(r)
         return filtered_res
-    
+
     # @classmethod
-    def get_all_contributors():
-        res = requests.get("https://raw.githubusercontent.com/developersIndia/resources/master/.all-contributorsrc").json()
+    def get_resources_contributors():
+        res = requests.get(
+            "https://raw.githubusercontent.com/developersIndia/resources/master/.all-contributorsrc"
+        ).json()
         return res
 
     def get_saadhan_contributors():
-        res = requests.get("https://raw.githubusercontent.com/developersIndia/saadhan/main/.all-contributorsrc").json()
+        res = requests.get(
+            "https://raw.githubusercontent.com/developersIndia/saadhan/main/.all-contributorsrc"
+        ).json()
         return res

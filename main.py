@@ -59,12 +59,15 @@ CATEGORIES = {
     "Deep Learning": "deep-learning",
     "Computer Science": "computer-science",
     "Computer Graphics": "computer-graphics",
+    "Operating Systems": "operating-systems",
     "Git": "git",
     "Android": "android",
     "Surprise Me!": "miscellaneous",
     "DevOps": "devops",
     "Rust": "rust",
+    "Java": "java",
     "TypeScript": "typescript",
+    "Linux": "linux",
 }
 
 
@@ -96,7 +99,7 @@ def category():
 
 @app.get("/contributors")
 def contributors():
-    contributors = resourcer.Resource.get_all_contributors()
+    contributors = resourcer.Resource.get_resources_contributors()
     saadhan_contributors = resourcer.Resource.get_saadhan_contributors()
 
     title = f"Saadhan is possible by more than {len(contributors)+len(saadhan_contributors)} community contributors 🤝 - r/developersIndia"
