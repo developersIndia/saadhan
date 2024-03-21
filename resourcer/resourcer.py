@@ -83,6 +83,18 @@ class Resource:
                 filtered_res.append(r)
         return filtered_res
 
+    def get_resources_by_level_and_type(self, level: str, rtype: str):
+        res = self.get_resource()
+        filtered_res = []
+
+        for r in res["resources"]:
+            if level and r.get("level") != level:
+                continue
+            if rtype and r.get("type") != rtype:
+                continue
+            filtered_res.append(r)
+        return filtered_res
+
     # @classmethod
     def get_resources_contributors():
         res = requests.get(
