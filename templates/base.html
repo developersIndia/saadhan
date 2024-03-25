@@ -2,27 +2,26 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ title }}">
-  <meta property="og:url" content="{{ url_for(request.endpoint, _external=True) }}" />
-	<meta name="twitter:site" content="@devsinindia">
-	<meta name="twitter:creator" content="@devsinindia">
-	<meta property="og:site_name" content="Saadhan - A resource hub by r/developersIndia">
+  <meta property="og:url" content="{{ url_for(request.endpoint, _external=True) }}">
+  <meta name="twitter:site" content="@devsinindia">
+  <meta name="twitter:creator" content="@devsinindia">
+  <meta property="og:site_name" content="Saadhan - A resource hub by r/developersIndia">
   <meta name="description" content="Saadhan is a resource hub for the r/developersIndia community, which offers an extensive collection of tech resources. Whether you are a beginner or an experienced professional, Saadhan has something for everyone.">
-	<meta property="og:description" content="Saadhan is a resource hub for the r/developersIndia community, which offers an extensive collection of tech resources. Whether you are a beginner or an experienced professional, Saadhan has something for everyone." />
-	<meta name="twitter:description" content="Saadhan is a resource hub for the r/developersIndia community, which offers an extensive collection of tech resources. Whether you are a beginner or an experienced professional, Saadhan has something for everyone.">
-  <meta name="google-site-verification" content="jeqscIfDl_A3eUsQzbMRqd74G3WaI1GHVaV3DHkDD4A" />
+  <meta property="og:description" content="Saadhan is a resource hub for the r/developersIndia community, which offers an extensive collection of tech resources. Whether you are a beginner or an experienced professional, Saadhan has something for everyone.">
+  <meta name="twitter:description" content="Saadhan is a resource hub for the r/developersIndia community, which offers an extensive collection of tech resources. Whether you are a beginner or an experienced professional, Saadhan has something for everyone.">
+  <meta name="google-site-verification" content="jeqscIfDl_A3eUsQzbMRqd74G3WaI1GHVaV3DHkDD4A">
 
   <title>{{ title }}</title>
 
   <link rel="canonical" href="{{ url_for(request.endpoint, _external=True) }}">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
-  <link rel="icon" type="image/x-icon"
-    href="https://raw.githubusercontent.com/developersIndia/assets/main/logo.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+  <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/developersIndia/assets/main/logo.svg">
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/custom.css') }}">
   <script src="https://unpkg.com/htmx.org@1.8.4"></script>
 </head>
@@ -30,43 +29,30 @@
 <body>
   <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
-
       <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
       </a>
     </div>
-
     <div id="navbarBasicExample" class="navbar-menu">
       <div class="navbar-start">
-        <a href="/" class="navbar-item">
-          Home
-        </a>
-        <a href="/how-to-contribute" class="navbar-item">
-          How to contribute
-        </a>
-        <a href="/contributors" class="navbar-item">
-          Contributors
-        </a>
-        <a href="https://wiki.developersindia.in/" class="navbar-item">
-          Wiki
-        </a>
+        <a href="/" class="navbar-item">Home</a>
+        <a href="/how-to-contribute" class="navbar-item">How to contribute</a>
+        <a href="/contributors" class="navbar-item">Contributors</a>
+        <a href="https://wiki.developersindia.in/" class="navbar-item">Wiki</a>
       </div>
-
       <div class="navbar-end">
         <div class="navbar-item">
           <div class="buttonGroup">
-          <div class="primaryButton">
-            <a style="background-color: #E4376D;" href="https://reddit.com/r/developersIndia" class="button is-primary">
-              <strong>Join Us</strong>
-            </a>
-          </div>
-          <div class="secondaryButton">
-            <a href="https://discord.gg/MKXMSNC" class="button is-light">
-              Discord
-            </a>
-          </div>
+            <div class="primaryButton">
+              <a style="background-color: #E4376D;" href="https://reddit.com/r/developersIndia" class="button is-primary">
+                <strong>Join Us</strong>
+              </a>
+            </div>
+            <div class="secondaryButton">
+              <a href="https://discord.gg/MKXMSNC" class="button is-light">Discord</a>
+            </div>
           </div>
         </div>
       </div>
@@ -74,13 +60,13 @@
   </nav>
   <main>
     <div class="content is-vcentered has-text-centered">
-              <figure class="is-2 is-center">
-            <img alt="No data to display" src={{ url_for('static', filename='assets/svgs/logo.svg' ) }}>
-        </figure>
-      <h1 class="title is-2 is-center"><a href="/">saadhan</a> - resource hub by <a
-          href="https://reddit.com/r/developersIndia">r/DevelopersIndia</a></h1>
+      <figure class="is-2 is-center">
+        <img alt="No data to display" src="{{ url_for('static', filename='assets/svgs/logo.svg') }}">
+      </figure>
+      <h1 class="title is-2 is-center">
+        <a href="/">saadhan</a> - resource hub by <a href="https://reddit.com/r/developersIndia">r/DevelopersIndia</a>
+      </h1>
     </div>
-
     <div class="container">
       {% block content %}
       {% endblock content %}
@@ -89,23 +75,19 @@
   <footer class="footer">
     <div class="content has-text-centered">
       <p>
-        <strong>Saadhan</strong> by <a href="https://developersindia.in/">r/developersIndia</a>. The source
-        code is licensed
-        <a href="https://github.com/developersIndia/saadhan/blob/main/LICENSE">GPL v3.0</a>. The website content
-        is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+        <strong>Saadhan</strong> by <a href="https://developersindia.in/">r/developersIndia</a>. The source code is licensed <a href="https://github.com/developersIndia/saadhan/blob/main/LICENSE">GPL v3.0</a>. The website content is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
       </p>
     </div>
   </footer>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.5.4/randomColor.min.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-  <script src={{ url_for('static', filename='js/custom.js' ) }}></script>
+  <script src="{{ url_for('static', filename='js/custom.js') }}"></script>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-QLB0N16RL5"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'G-QLB0N16RL5');
   </script>
   <script async defer src="https://buttons.github.io/buttons.js"></script>
