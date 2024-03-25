@@ -4,7 +4,6 @@
 
 html {
     overflow-y: auto;
-
 }
 
 body {
@@ -13,6 +12,7 @@ body {
     min-height: 100vh;
     padding-right: 1rem;
     padding-left: 1rem;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 main {
@@ -26,7 +26,7 @@ footer {
 }
 
 a {
-    color: #E4376D;
+    color: #e4376d;
 }
 
 .grid-container {
@@ -38,35 +38,26 @@ a {
     grid-template-columns: repeat(5, 1fr);
 }
 
-p#\.contributor-name{
+p#\.contributor-name {
     text-align: center;
 }
 
-
-body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  }
-
-  .main-main {
+.main-main {
     width: 80%;
     margin: 3rem auto;
     padding: 3rem auto;
-  }
+}
 
-  hr {
+hr {
     border: 0;
     height: 1px;
     background: #333;
-    background-image: linnear-gradiet(to right, #ccc, #333, #ccc);
+    background-image: linear-gradient(to right, #ccc, #333, #ccc);
     margin-top: 12px;
     margin-bottom: 16px;
-  }
+}
 
-  a {
-    color: #e4376d;
-  }
-
-  .imp {
+.imp {
     border: none;
     margin: 0;
     padding: 0% 0.3%;
@@ -78,65 +69,53 @@ body {
     border-radius: 5px;
     color: inherit;
     line-height: normal;
-  }
+}
 
-  pre {
+pre {
     padding: 10px 10px 10px 25px;
-  }
+}
 
-  .header-1,
-  .header-2 {
+.header-1,
+.header-2 {
     margin-bottom: 3rem;
+}
 
-  }
-
-  .header-2 {
+.header-2 {
     margin-top: 24px;
-  }
+}
 
-  .card {
+.card {
     margin-top: 1rem;
     margin-bottom: 1rem;
     box-shadow: none;
     border: 1.5px #f0f0f0 solid;
     border-radius: 1rem;
-  }
+}
 
-  .navbar {
+.navbar {
     margin-bottom: 2rem;
     margin-right: 2.5rem;
     margin-left: 2.5rem;
     margin-top: 1rem;
-      -webkit-user-select: none;
-        /* Safari */
-        -ms-user-select: none;
-        /* IE 10 and IE 11 */
-        user-select: none;
-        /* Standard syntax */
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
 
-  }
-
-  .logo {
+.logo {
     display: flex;
-  -webkit-user-select: none;
-    /* Safari */
-    -ms-user-select: none;
-    /* IE 10 and IE 11 */
-    user-select: none;
-    /* Standard syntax */
-  }
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
 
-  .buttonGroup {
+.buttonGroup {
     display: flex;
     flex-direction: row;
-  }
+}
 
-  .primaryButton {
+.primaryButton,
+.secondaryButton {
     margin-right: 0.5rem;
     margin-left: 0.5rem;
-  }
- 
-  .secondaryButton {
-    margin-right: 0.5rem;
-    margin-left: 0.5rem;
-  }
+}
