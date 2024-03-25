@@ -1,17 +1,20 @@
-{% extends 'base.html' %}
-{% block content %}
-<div class="content is-vcentered has-text-centered">
-    <h2 class="title is-3">What do you wanna learn today?</h2>
+{% extends 'base.html' %} {% block content %}
+<div class="mt-16 mb-4 text-[#363636]">
+  <h2 class="text-2xl ml-4 font-medium">What do you wanna learn today?</h2>
 </div>
 
 <div class="container" id="categories">
-    {% for category, link in categories.items() %}
-    <a style="margin: 1%" class="category_name button is-medium" id="category_name"
-        href="/resources?category={{ link }}">{{category}}</a>
-    {% endfor %}
+  {% for category, link in categories.items() %}
+  <a
+    style="margin: 1%"
+    class="category_name button is-medium"
+    id="category_name"
+    href="/resources?category={{ link }}"
+    >{{category}}</a
+  >
+  {% endfor %}
 </div>
 
 <div id="resources"></div>
-
 
 {% endblock content %}
