@@ -3,6 +3,7 @@ from pathlib import Path
 from flask import Flask, request, render_template
 from flask_wtf import FlaskForm
 from wtforms.fields import SelectField
+from wtforms.validators import Optional
 from dotenv import load_dotenv
 from resourcer import resourcer
 
@@ -13,6 +14,33 @@ load_dotenv(BASE_DIR / ".env")
 
 class Config:
     SECRET_KEY = os.getenv("SECRET_KEY") or "SECRET_KEY"
+
+
+class FilterForm(FlaskForm):
+    level = SelectField(
+        "level",
+        choices=[
+            ("beginner", "beginner"),
+            ("intermediate", "intermediate"),
+            ("advanced", "advanced"),
+            ("everyone", "everyone"),
+        ],
+        validators=[Optional()],
+    )
+    type = SelectField(
+        "type",
+        choices=[
+            ("video", "video"),
+            ("article", "article"),
+            ("book", "book"),
+            ("github", "github"),
+            ("course", "course"),
+            ("audio", "audio"),
+            ("cheatsheet", "cheatsheet"),
+            ("website", "website"),
+        ],
+        validators=[Optional()],
+    )
 
 
 class FilterLevelForm(FlaskForm):
@@ -42,6 +70,7 @@ class FilterTypeForm(FlaskForm):
         ],
     )
 
+
 app = Flask(__name__)
 app.config.from_object(Config)
 
@@ -59,10 +88,15 @@ CATEGORIES = {
     "Deep Learning": "deep-learning",
     "Computer Science": "computer-science",
     "Computer Graphics": "computer-graphics",
+    "Operating Systems": "operating-systems",
     "Git": "git",
     "Android": "android",
     "Surprise Me!": "miscellaneous",
     "DevOps": "devops",
+    "Rust": "rust",
+    "Java": "java",
+    "TypeScript": "typescript",
+    "Linux": "linux",
 }
 
 
@@ -94,7 +128,7 @@ def category():
 
 @app.get("/contributors")
 def contributors():
-    contributors = resourcer.Resource.get_all_contributors()
+    contributors = resourcer.Resource.get_resources_contributors()
     saadhan_contributors = resourcer.Resource.get_saadhan_contributors()
 
     title = f"Saadhan is possible by more than {len(contributors)+len(saadhan_contributors)} community contributors 🤝 - r/developersIndia"
@@ -108,24 +142,19 @@ def contributors():
 
 @app.get("/how-to-contribute")
 def how_to_contribute():
-    return render_template(
-        "how-to-contribute.html"
-    )
+    return render_template("how-to-contribute.html")
 
 
 @app.post("/filtered_resources")
 def filtered_resources():
+    # print("Form data:", request.form)
     rsr = resourcer.Resource(request.form.get("category"))
-    level_form = FilterLevelForm()
-    if level_form.validate_on_submit():
-        res_level = level_form.level.data
-        resources = rsr.get_resources_by_level(res_level)
-        return render_template("filtered_resources.html", resources=resources)
+    filter_form = FilterForm()
 
-    type_form = FilterTypeForm()
-    if type_form.validate_on_submit():
-        res_type = type_form.type.data
-        resources = rsr.get_resources_by_type(res_type)
+    if filter_form.validate_on_submit():
+        res_level = filter_form.level.data
+        res_type = filter_form.type.data
+        resources = rsr.get_resources_by_level_and_type(res_level, res_type)
         return render_template("filtered_resources.html", resources=resources)
 
     return "Wuba luba dub dub"
