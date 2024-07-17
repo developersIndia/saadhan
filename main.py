@@ -159,6 +159,9 @@ def filtered_resources():
 
     return "Wuba luba dub dub"
 
+@app.errorhandler(Exception)
+def handle_exception(e):
+    return render_template("error.html", endpoint=None)
 
 if __name__ == "__main__":
     app.run(debug=True)
