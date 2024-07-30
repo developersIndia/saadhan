@@ -87,6 +87,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "yumpyy",
+      "name": "yump",
+      "avatar_url": "https://avatars.githubusercontent.com/u/121102787?v=4",
+      "profile": "https://haspper.neocities.org/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
@@ -94,5 +103,6 @@
   "repoType": "github",
   "repoHost": "https://github.com",
   "projectName": "saadhan",
-  "projectOwner": "developersIndia"
+  "projectOwner": "developersIndia",
+  "commitType": "docs"
 }
