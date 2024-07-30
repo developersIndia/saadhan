@@ -97,6 +97,7 @@ CATEGORIES = {
     "Java": "java",
     "TypeScript": "typescript",
     "Linux": "linux",
+    "Distributed Computing": "distributed-computing",
 }
 
 

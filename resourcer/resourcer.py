@@ -46,6 +46,7 @@ CATEGORY_API_PATH = {
     "devops": "devops",
     "git": "tools/git",
     "linux": "tools/linux",
+    "distributed-computing": "distributed-computing",
 }
 
 requests_cache.install_cache("resource_cache", backend="memory", expire_after=180)
