@@ -8,7 +8,7 @@
 
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ title }}">
-  <meta property="og:url" content="{{ url_for(request.endpoint, _external=True) }}" />
+  <meta property="og:url" content="{{ request.url }}" />
 	<meta name="twitter:site" content="@devsinindia">
 	<meta name="twitter:creator" content="@devsinindia">
 	<meta property="og:site_name" content="Saadhan - A resource hub by r/developersIndia">
@@ -19,7 +19,7 @@
 
   <title>{{ title }}</title>
 
-  <link rel="canonical" href="{{ url_for(request.endpoint, _external=True) }}">
+  <link rel="canonical" href="{{ request.url }}">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css" />
   <link rel="icon" type="image/x-icon"
     href="https://raw.githubusercontent.com/developersIndia/assets/main/logo.svg">
