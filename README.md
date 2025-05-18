@@ -7,6 +7,10 @@ Saadhan is a resource hub for the [r/developersIndia](https://reddit.com/r/devel
 )](https://www.reddit.com/r/developersIndia/)
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg)](#contributors-)
 
+
+> [!IMPORTANT]  
+> We are currently migrating our hosting provider. During this time, the `saadhan.developersindia.in` link will be unavailable. In the meantime, please use this temporary URL: https://saadhan-hplc.onrender.com/
+
 ## ❓ What is this
 - Saadhan is an app to aggregate and provide tech resources to learn from.
 - Resources are contributed by community. [Contribute your favourite resources](https://github.com/developersIndia/resources)
